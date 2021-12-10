@@ -31,8 +31,8 @@ function AboutSection() {
             <h3>Guilherme Hammes</h3>
             <p>{currentAge()} anos</p>
             <p>Joinville/SC</p>
-            <a href="https://www.linkedin.com/in/guilherme-felipe-ferreira-hammes/" target={'_blank'}><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/554792569136" target={'_blank'}><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/guilherme-felipe-ferreira-hammes/" target={'_blank'} rel={"noreferrer"}><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/554792569136" target={'_blank'} rel={"noreferrer"}><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
         <div className="text">

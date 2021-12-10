@@ -6,7 +6,7 @@ const ContactCard = ({
   cardName
 }) => {
   return (
-    <a className='contact-card shadow-1' href={targetLink} target={'_blank'}>
+    <a className='contact-card shadow-1' href={targetLink} target={'_blank'} rel={"noreferrer"}>
       <div className="cover"></div>
       <i className={iconClass}></i>
       <h3>{cardName}</h3>

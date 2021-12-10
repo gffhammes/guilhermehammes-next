@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <section id='hero__section'>
       <div className="overlay" />
-      <video loop="true" autoplay="autoplay" id="vid" muted>
+      <video loop="true" autoPlay="autoplay" id="vid" muted>
         <source src={`/videos/guilherme-hammes.mp4`} type="video/mp4" />
       </video>
       <div className="container">
