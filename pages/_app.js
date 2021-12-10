@@ -25,6 +25,7 @@ import '../components/Button/Button.scss';
 import '../components/BenefitsSection/BenefitsSection.scss';
 import '../components/BenefitsItem/BenefitsItem.scss';
 import '../components/AboutSection/AboutSection.scss';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
