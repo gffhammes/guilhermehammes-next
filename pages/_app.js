@@ -27,6 +27,9 @@ import '../components/BenefitsItem/BenefitsItem.scss';
 import '../components/AboutSection/AboutSection.scss';
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-P3ZZ54L' });
+  }, []);
   return <Component {...pageProps} />
 }
 
