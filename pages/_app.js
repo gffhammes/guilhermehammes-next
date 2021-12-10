@@ -26,6 +26,7 @@ import '../components/BenefitsSection/BenefitsSection.scss';
 import '../components/BenefitsItem/BenefitsItem.scss';
 import '../components/AboutSection/AboutSection.scss';
 import { useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
