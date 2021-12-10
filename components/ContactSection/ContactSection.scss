@@ -1,0 +1,39 @@
+#contact__section {
+  min-height: 100vh;
+
+  .container {
+    display: grid;
+    row-gap: 4rem;
+
+    .contact-cards {
+      display: grid;
+      row-gap: 1rem;
+      column-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 575px) {
+  #contact__section {  
+    .container {  
+      .contact-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #contact__section {  
+    .container {
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 4rem;
+
+      .contact-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

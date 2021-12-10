@@ -1,0 +1,29 @@
+#benefits__section {
+  background-color: var(--light-grey);
+
+  position: relative;
+
+  .container {
+    display: grid;
+    row-gap: 4rem;
+    position: relative;
+    z-index: 500;
+
+    .benefits-items {
+      display: grid;
+      row-gap: 3rem;
+      column-gap: 3rem;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #benefits__section {  
+    .container {  
+      .benefits-items {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

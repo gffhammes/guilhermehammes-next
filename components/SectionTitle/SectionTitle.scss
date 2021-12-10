@@ -1,0 +1,22 @@
+.title {
+
+  &.align--left {
+    text-align: left;
+  }
+
+  &.align--center {
+    text-align: center;
+  }
+
+  &.align--right {
+    text-align: right;
+  }
+
+  span {
+    color: var(--orange);
+  }
+
+  h2{
+    color: var(--dark-grey);
+  }
+}

@@ -1,0 +1,39 @@
+.contact-card {
+  width: 100%;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  color: var(--dark-grey);
+  position: relative;
+  overflow: hidden;
+  transition: all .3s;
+
+  &:hover {
+    .cover {
+      left: 0%;
+    }
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);    
+  }
+
+  .cover {
+    transition: all .3s;
+    z-index: 20;
+    background: linear-gradient(60deg, #ffba53, #ff9900, #ffba53);
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: 0;
+    left: -200%;
+  }
+
+  i, h3 {
+    z-index: 30;
+    font-size: 1.5rem;
+  }
+}

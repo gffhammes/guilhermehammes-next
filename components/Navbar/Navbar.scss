@@ -1,0 +1,122 @@
+#navbar {
+  background-color: transparent;
+  height: var(--menu-height);
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  transition: all .3s ease;
+
+  &.bg--blue {
+    background-color: var(--blue);
+  }
+
+  .navbar-container {
+    height: 100%;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-logo {
+      height: 100%;
+  
+      img {
+        height: 100%;
+      }
+    }
+
+    .nav-menu {
+      background-color: var(--blue);
+      transform: translateX(100%);
+      transition: all .5s;
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      padding: 2rem;
+      min-width: 50%;
+      display: grid;
+      grid-template-rows: repeat(6, min-content);
+      row-gap: 2rem;
+      align-content: center;
+
+      &.active {
+        transform: none;
+      }
+
+      .nav-item {
+        list-style: none;
+        position: relative;
+        overflow-x: hidden;
+
+        .nav-link{
+          position: relative;
+          overflow: hidden;
+
+          &::before {
+            transition: all .3s;
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 1px);
+            top: 0;
+            left: -100%;
+            content: '';              
+            border-bottom: 1px solid white;
+          }
+
+          &:hover {
+            color: var(--orange);            
+          }
+
+          &.active {
+            &::before {
+              left: 0;
+            }
+          }
+        }    
+      }
+    }
+
+    .menu-icon {
+      z-index: 999;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #navbar {  
+    .navbar-container {  
+      .nav-menu {
+        background-color: transparent;
+        transform: none;
+        transition: all .5s;
+        position: relative;
+        height: fit-content;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(6, min-content);
+        grid-template-rows: min-content;
+        column-gap: 2rem;
+        align-content: center;
+        justify-content: end;
+  
+        &.active {
+          transform: none;
+        }
+  
+        .nav-item {
+          list-style: none;
+          white-space: nowrap;
+        }
+      
+      }
+  
+      .menu-icon {
+        display: none;
+      }
+    }
+  }
+  
+}

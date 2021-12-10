@@ -1,0 +1,14 @@
+.benefit-item {
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-rows: min-content auto;
+
+  img {
+    width: 3rem;
+  }
+
+  p {
+    margin: 0;
+  }  
+}

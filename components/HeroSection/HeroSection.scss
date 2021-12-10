@@ -1,0 +1,118 @@
+#hero__section {
+  background-color: var(--blue);
+  height: 100%;
+  padding-top: var(--menu-height);
+  padding-bottom: var(--menu-height);
+
+  position: relative;
+
+  video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--blue);
+    filter: opacity(.7);
+    z-index: 5;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    border-bottom: 48vw solid white;
+    border-left: 100vw solid transparent;//var(--blue);
+    width: 0;
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  > .container {
+    height: 100%;
+    z-index: 500;
+    position: relative;
+
+    h1 {
+      height: 100%;
+      color: var(--white);
+      font-weight: 400;
+      font-size: 2rem;
+      display: grid;
+      grid-template-areas:
+      "a"
+      "b"
+      "c";
+      row-gap: 2rem;
+      align-content: center;
+  
+      span {
+        grid-area: a;        
+        strong {
+          color: var(--orange);
+          font-size: 3.5rem;
+        }
+      }
+  
+      p {
+        grid-area: b;
+        font-size: 1rem;
+        margin-bottom: 0;
+  
+        > strong {        
+          color: var(--orange);
+        }
+      }
+
+      .btn {        
+        grid-area: c;
+      }
+  
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hero__section {
+    //height: 90%;
+
+    &::before {
+      border-bottom: 20vw solid white;
+      border-left: 100vw solid transparent;
+    }
+
+    > .container {
+      h1 {
+        row-gap: 0;
+        column-gap: 5rem;
+        grid-template-columns: min-content auto;
+        grid-template-rows: min-content min-content;
+        grid-template-areas:
+        "a b"
+        "a c";
+        justify-content: center;
+
+        span {
+          white-space: nowrap;
+        }
+
+        p {
+          width: 30ch;
+        }
+        
+        .btn {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

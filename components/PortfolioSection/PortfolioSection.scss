@@ -1,0 +1,17 @@
+#portfolio__section {
+  background-color: var(--light-grey);
+
+  position: relative;  
+
+  .container {
+    display: grid;
+    row-gap: 5rem;
+    position: relative;
+    z-index: 500;
+
+    .portfolio-items {
+      display: grid;
+      row-gap: 7.5rem;
+    }
+  }
+}
