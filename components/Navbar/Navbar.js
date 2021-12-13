@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-scroll';
+import Image from 'next/image';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -27,7 +28,11 @@ function Navbar() {
             to='hero__section'
             smooth={true}
           >
-            <img src={'/images/logo-branca.png'} alt="Logo" />
+            <Image
+              src={'/images/logo-branca.png'}
+              alt="Logo"
+              layout={'fill'}
+            />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

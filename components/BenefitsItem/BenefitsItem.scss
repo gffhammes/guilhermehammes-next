@@ -4,8 +4,13 @@
   row-gap: 1rem;
   grid-template-rows: min-content auto;
 
-  img {
-    width: 3rem;
+  > span {
+    position: relative !important;
+    display: unset !important;
+
+    img {
+      position: relative !important;
+    }
   }
 
   p {

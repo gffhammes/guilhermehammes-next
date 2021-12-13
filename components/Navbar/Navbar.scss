@@ -20,9 +20,18 @@
 
     .navbar-logo {
       height: 100%;
-  
-      img {
-        height: 100%;
+
+      > span {
+        height: 100% !important;
+        width: 100% !important;
+        position: relative !important;
+        display: unset !important;
+
+        img {
+          position: relative !important;
+          width: 100% !important;
+          height: 100% !important;
+        }
       }
     }
 

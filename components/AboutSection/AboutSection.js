@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import Button from '../Button/Button'
 
@@ -25,7 +26,11 @@ function AboutSection() {
         />
         <div className="photo-resume">
           <div className="photo">
-            <img src={'/images/guilherme-hammes.jpg'} alt="Guilherme Hammes" />
+            <Image
+              src={'/images/guilherme-hammes.jpg'}
+              alt={"Guilherme Hammes"}
+              layout={'fill'}
+            />
           </div>
           <div className="resume">
             <h3>Guilherme Hammes</h3>

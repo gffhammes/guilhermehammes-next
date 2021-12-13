@@ -1,16 +1,17 @@
 .portfolio-item {
   width: 100%;
 
+  > span {
+    z-index: 300 !important;
+    overflow: visible !important;
+    width: 100% !important;
+  }
+
   img {
-    margin-bottom: -25%;
-    width: 100%;
-    height: 40%;
-    object-fit: contain;
-    object-position: center center;
-    -webkit-filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16)) drop-shadow(0px 3px 6px rgba(0,0,0,0.23));
-    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16)) drop-shadow(0px 3px 6px rgba(0,0,0,0.23));
-    z-index: 300;
-    position: relative;
+    margin-bottom: -25% !important;
+    z-index: 300 !important;
+    -webkit-filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12)) drop-shadow(0 1px 2px rgba(0,0,0,0.24));
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12)) drop-shadow(0 1px 2px rgba(0,0,0,0.24));
   }
 
   .content {
@@ -44,19 +45,30 @@
   }
 }
 
+@media screen and (min-width: 400px) {
+  .portfolio-item {
+    img {
+      margin-bottom: -15% !important;
+    }
+  }
+}
+
 @media screen and (min-width: 601px) {
   .portfolio-item {
     display: flex;
     justify-content: center;
     width: 100%;
-  
-    img {
-      margin-bottom: 0;
-      margin-right: -5%;
-      width: 15rem;
-      height: 100%;
+
+    > span {
+      width: 205px !important;
+      height: 100% !important;
     }
-  
+
+    img {
+      margin-bottom: 0 !important;
+      margin-right: -15% !important;
+    }
+
     .content {
       padding:  1.5rem 1.5rem 1.5rem 5rem;  
       width: 70%;

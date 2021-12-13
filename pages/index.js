@@ -47,7 +47,6 @@ function App() {
       </Head>
       <Navbar />
       <HeroSection />
-      {/*<img src={process.env.PUBLIC_URL + '/images/padrao-01.png'} alt="Padrão" className='pattern pattern-01'/>*/}
       <AboutSection />
       <div className="transition bottom--light-grey right--white" />
       <PortfolioSection />

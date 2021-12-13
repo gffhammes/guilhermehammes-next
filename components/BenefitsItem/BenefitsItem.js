@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const BenefitsItem = ({
   iconPath,
@@ -7,7 +8,14 @@ const BenefitsItem = ({
 }) => {  
   return (
     <div className="benefit-item">
-      <img src={iconPath} alt={title} />
+      <Image
+        src={iconPath}
+        alt={title}
+        width={'48'}
+        height={'48'}
+        layout={'fixed'}
+        objectFit={'contain'}
+      />
       <div className="content">
         <h3>{title}</h3>
         <p>{text}</p>

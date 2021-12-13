@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
+import Image from 'next/image';
 
 const PortfolioItem = ({
   imgPath,
@@ -10,7 +11,16 @@ const PortfolioItem = ({
 }) => {  
   return (
     <div className="portfolio-item">
-      <img src={imgPath} alt={title} />
+      <Image
+        src={imgPath}
+        alt={title}
+        layout={'fixed'}
+        height={'200'}
+        width={'250'}
+        
+        objectFit={'contain'}
+        objectPosition={'center center'}
+      />
       <div className="content shadow-2">
         <h3>{title}</h3>
         <span>{resume}</span>
