@@ -47,13 +47,18 @@
 
       .resume {        
         i {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           color: var(--dark-grey);
           margin-right: .5rem;
+          transition: all .2s;
+
+          &:hover {
+            color: var(--orange);
+          }
         }
 
         h3, p {
-          margin-bottom: 0.2rem;
+          margin-bottom: 0.3rem;
         }
       }
     }
