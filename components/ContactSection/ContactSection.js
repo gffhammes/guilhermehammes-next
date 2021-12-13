@@ -20,12 +20,12 @@ function ContactSection() {
           />
           <ContactCard
             cardName={'Telefone'}
-            targetLink={'tel:4792569136'}
+            targetLink={'tel:47992569136'}
             iconClass={'far fa-phone-alt'}
           />
           <ContactCard
             cardName={'E-mail'}
-            targetLink={'mailto:hello@guilhermehammes.com.br'}
+            targetLink={'mailto:gffhammes@gmail.com'}
             iconClass={'far fa-envelope'}
           />
         </div>

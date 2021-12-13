@@ -9,8 +9,7 @@ function Footer() {
   return (
     <footer id='footer'>
       <div className="container">
-        <span>Copyright © {currentYear()}</span>
-        <span>Desenvolvido por guilhermehammes</span>
+        <span>© {currentYear()} | guilhermehammes</span>
       </div>
     </footer>
   )
