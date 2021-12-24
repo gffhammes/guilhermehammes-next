@@ -10,7 +10,7 @@ function ContactSection() {
         <SectionTitle
           textAlign='align--left'
           subtitle='contato'
-          title='vamos tomar um café e mudar o futuro do seu negócio?'
+          title='vamos tomar um café?'
         />
         <div className="contact-cards">
           <ContactCard
