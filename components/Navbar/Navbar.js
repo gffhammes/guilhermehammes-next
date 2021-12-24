@@ -31,8 +31,9 @@ function Navbar() {
             <Image
               src={'/images/logo-branca.png'}
               alt="Logo"
-              priority={true}
               layout={'fill'}
+              objectFit={'contain'}
+              priority={true}
             />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
