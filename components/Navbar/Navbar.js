@@ -31,6 +31,7 @@ function Navbar() {
             <Image
               src={'/images/logo-branca.png'}
               alt="Logo"
+              priority={true}
               layout={'fill'}
             />
           </Link>

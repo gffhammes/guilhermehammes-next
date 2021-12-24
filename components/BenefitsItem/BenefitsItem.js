@@ -15,6 +15,7 @@ const BenefitsItem = ({
         height={'48'}
         layout={'fixed'}
         objectFit={'contain'}
+        priority={true}
       />
       <div className="content">
         <h3>{title}</h3>

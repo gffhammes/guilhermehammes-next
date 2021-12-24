@@ -17,7 +17,7 @@ const PortfolioItem = ({
         layout={'fixed'}
         height={'200'}
         width={'250'}
-        
+        priority={true}        
         objectFit={'contain'}
         objectPosition={'center center'}
       />

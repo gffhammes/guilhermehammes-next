@@ -30,6 +30,7 @@ function AboutSection() {
               src={'/images/guilherme-hammes.jpg'}
               alt={"Guilherme Hammes"}
               layout={'fill'}
+              priority={true}
             />
           </div>
           <div className="resume">
