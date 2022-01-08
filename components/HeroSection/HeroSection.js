@@ -14,9 +14,9 @@ function HeroSection() {
           <strong>guilherme<br/>hammes</strong>{' />'}</span>
           <p>
             <strong>desenvolvedor front-end</strong><br/> 
-            desenvolvo sites, landing pages, hotsites e e-commerces responsivos e otimizados para os motores de busca
+            desenvolvo sites, landing pages, hotsites e e-commerces responsivos e otimizados para o Google
           </p>
-          <Button btnSize='btn--large' targetId='about__section'>{'saber mais >'}</Button>
+          <Button btnSize='btn--large' targetId='contact__section'>{'contato >'}</Button>
         </h1>
       </div>      
     </section>

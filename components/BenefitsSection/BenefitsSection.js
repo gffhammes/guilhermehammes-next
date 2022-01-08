@@ -31,7 +31,7 @@ function BenefitsSection() {
           <BenefitsItem
             iconPath='/images/icone-vantagens-04.png'
             title='SEO'
-            text='Além da velocidade de carregamento, os sites desenvolvidos em linha de código têm uma semântica mais organizada, o que ajuda muito no seu SEO. Cuido de pequenos detalhes como o uso de palavras-chave e acessibilidade, que contam muito no seu desempenho.'
+            text='Além da velocidade de carregamento, os sites desenvolvidos em linha de código têm uma semântica mais organizada, o que ajuda muito no seu SEO. Cuido de pequenos detalhes como o uso de palavras-chave e acessibilidade, que contam para o desempenho.'
           />
         </div>
         <Button targetId='contact__section'>{'contato >'}</Button>
