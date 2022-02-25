@@ -6,13 +6,24 @@
 
   position: relative;
 
-  video {
+  // video {
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   object-fit: cover;
+  //   object-position: left;
+  // }
+
+  #tsparticles {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    object-fit: cover;
-    object-position: left;
+
+    > .tsparticles {
+      position: absolute;
+    }
   }
 
   .overlay {
@@ -21,17 +32,17 @@
     position: absolute;
     top: 0;
     background-color: var(--blue);
-    filter: opacity(.7);
+    filter: opacity(0.7);
     z-index: 5;
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -1px;
     right: 0;
     border-bottom: 48vw solid white;
-    border-left: 100vw solid transparent;//var(--blue);
+    border-left: 100vw solid transparent; //var(--blue);
     width: 0;
     z-index: 100;
     overflow: hidden;
@@ -49,34 +60,33 @@
       font-size: 2rem;
       display: grid;
       grid-template-areas:
-      "a"
-      "b"
-      "c";
+        "a"
+        "b"
+        "c";
       row-gap: 2rem;
       align-content: center;
-  
+
       span {
-        grid-area: a;        
+        grid-area: a;
         strong {
           color: var(--orange);
           font-size: 3.5rem;
         }
       }
-  
+
       p {
         grid-area: b;
         font-size: 1rem;
         margin-bottom: 0;
-  
-        > strong {        
+
+        > strong {
           color: var(--orange);
         }
       }
 
-      .btn {        
+      .btn {
         grid-area: c;
       }
-  
     }
   }
 }
@@ -97,8 +107,8 @@
         grid-template-columns: min-content auto;
         grid-template-rows: min-content min-content;
         grid-template-areas:
-        "a b"
-        "a c";
+          "a b"
+          "a c";
         justify-content: center;
 
         span {
@@ -108,7 +118,7 @@
         p {
           width: 30ch;
         }
-        
+
         .btn {
           align-self: flex-end;
         }
