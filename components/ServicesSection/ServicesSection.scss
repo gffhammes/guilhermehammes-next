@@ -7,29 +7,20 @@
       display: grid;
       row-gap: 2rem;
       column-gap: 2rem;
-
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-@media screen and (min-width: 576px) {
-  #services__section {
-    .container {  
-      .services-cards {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-      }
+      grid-template-areas:
+        "a"
+        "b"
+        "c";
     }
   }
 }
 
 @media screen and (min-width: 911px) {
   #services__section {
-    .container {  
+    .container {
       .services-cards {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-areas: "a b c";
+        grid-template-columns: 1fr 1fr 1fr;
       }
     }
   }
