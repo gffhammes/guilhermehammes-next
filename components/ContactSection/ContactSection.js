@@ -2,16 +2,11 @@ import React from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle'
 import Button from '../Button/Button'
 import ContactCard from '../ContactCard/ContactCard'
-import { WhatsAppIcon, TelephoneIcon } from '../../src/Icons/icons';
-
-
 
 function ContactSection() {
   return (
     <section id='contact__section'>
       <div className="container">
-      <WhatsAppIcon fillColor="#444" />
-      <TelephoneIcon fillColor="#444" />
         <SectionTitle
           textAlign='align--left'
           subtitle='contato'
